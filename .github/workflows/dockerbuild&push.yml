@@ -18,7 +18,7 @@ jobs:
       - name: docker login 
         run: docker login --username ${{secrets.DOCKERHUBUNAME}} --password ${{secrets.DOCKERHUBPASS}}
       - name: print passwords 
-        run: echo ${{secrets.DOCKERHUBUSERNAME}}
+        run: echo ${{secrets.DOCKERHUBUNAME}}
       - name: docker build 
         run: cd testenv && docker build . -t fast_api:satyam
 
