@@ -28,4 +28,4 @@ jobs:
     if: ${{inputs.check == true }}
     steps:
       - name: Run a one-line script
-        run: echo "value from the user"
+        run: echo "value from the user "
